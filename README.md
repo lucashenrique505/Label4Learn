@@ -97,3 +97,92 @@ A arquitetura segue o padrão MVC (Model-View-Controller) com as seguintes camad
 - Criptografia de senhas com bcrypt.
 - Validação de entrada e sanitização de dados conforme OWASP Top 10.
 
+## 3.3 Stack Tecnológica
+| Categoria          | Tecnologia              | Justificativa                                          |
+| :----------------- | :---------------------- | :----------------------------------------------------- |
+| Linguagem Backend  | **Python (Flask)**      | Simplicidade e ampla integração com bibliotecas de IA. |
+| Frontend           | **ReactJS**             | Framework moderno, responsivo e eficiente.             |
+| Banco de Dados     | **PostgreSQL**          | Confiável, open source e robusto.                      |
+| Armazenamento      | **AWS S3 / Cloudinary** | Gerenciamento de imagens e escalabilidade.             |
+| Controle de Versão | **Git + GitHub**        | Colaboração e versionamento.                           |
+| IDE                | **VS Code**             | Leve, multiplataforma e produtiva.                     |
+| Design             | **Figma**               | Criação de mockups interativos.                        |
+| Hospedagem         | **Render / Railway**    | Deploy gratuito e escalável para MVP.                  |
+
+Licenciamento:
+- Todas as tecnologias são open source (MIT, Apache 2.0, ou equivalentes).
+
+## 3.4 Considerações de Segurança
+### Riscos Identificados
+- Injeção de código (SQL Injection, XSS).
+- Vazamento de credenciais.
+- Upload indevido de arquivos não permitidos.
+- Exposição indevida de dados de usuários.
+
+### Medidas de Mitigação
+- Sanitização e validação de todas as entradas.
+- Autenticação segura (JWT ou Flask-Login).
+- Criptografia de senhas com bcrypt.
+- Controle de permissões baseado em função (RBAC).
+- Armazenamento de imagens apenas em ambientes restritos.
+
+### Normas e Boas Práticas Seguidas
+- OWASP Top 10 (prevenção de vulnerabilidades web).
+- LGPD (proteção e uso ético de dados).
+- Princípios de Ética em IA (UNESCO / OECD).
+
+### Responsabilidade Ética
+- Os dados utilizados (imagens) serão obtidos de bases de domínio público ou gerados academicamente.
+- O sistema não processará dados pessoais, respeitando a privacidade, consentimento e finalidade educacional.
+
+## 3.5 Conformidade e Normas Aplicáveis
+| Norma / Lei                    | Aplicação no Projeto                                                                           |
+| :----------------------------- | :--------------------------------------------------------------------------------------------- |
+| **LGPD (Lei nº 13.709/2018)**  | Coleta mínima de dados pessoais; uso acadêmico restrito; política de consentimento e exclusão. |
+| **WCAG 2.1**                   | Diretrizes básicas de acessibilidade na interface.                                             |
+| **OWASP Top 10**               | Prevenção contra vulnerabilidades web comuns.                                                  |
+| **UNESCO – Ética em IA**       | Compromisso com uso educacional e não discriminatório de dados.                                |
+| **Creative Commons (imagens)** | Uso de imagens livres de direitos autorais.                                                    |
+
+# 4. Próximos Passos
+## 4.1. Visão Geral
+
+O projeto Label4Learn será desenvolvido em duas etapas principais — Portfólio I e Portfólio II — correspondendo ao ciclo completo de concepção, implementação e validação da solução.<br>
+O foco inicial será construir um MVP funcional (mínimo produto viável) voltado à rotulagem colaborativa de imagens no contexto acadêmico, garantindo base sólida para expansão futura.
+
+## 4.2. Portfólio I – Planejamento e Prototipagem (Semestre Atual)
+Objetivo geral: Estruturar os fundamentos conceituais, técnicos e visuais da plataforma.
+| Mês / Etapa                  | Descrição da Atividade                                                                      | Entregável                                            |
+| :--------------------------- | :------------------------------------------------------------------------------------------ | :---------------------------------------------------- |
+| **Outubro**                  | Finalização do RFC e definição dos requisitos funcionais e não funcionais.                  | Documento RFC completo e validado.                    |
+| **Outubro – Novembro**       | Desenvolvimento dos mockups no Figma e estruturação do design do sistema (arquitetura MVC). | Protótipo navegável e diagrama de arquitetura.        |
+| **Novembro**                 | Implementação inicial do backend (API Flask) e configuração do banco de dados.              | API base funcional e conexão com PostgreSQL.          |
+| **Dezembro**                 | Integração com o frontend (ReactJS) e teste das rotas principais.                           | MVP funcional: criação de projeto e rotulagem básica. |
+| **Encerramento Portfólio I** | Apresentação do MVP parcial e relatório técnico intermediário.                              | Apresentação + relatório técnico parcial.             |
+
+## 4.3. Portfólio II – Implementação, Testes e Entrega Final
+Objetivo geral: Consolidar o MVP, incluir funcionalidades complementares e validar o uso em contexto acadêmico.
+| Mês / Etapa | Descrição da Atividade                                                            | Entregável                                     |
+| :---------- | :-------------------------------------------------------------------------------- | :--------------------------------------------- |
+| **Março**   | Revisão da arquitetura e integração com armazenamento de imagens (S3 ou similar). | Sistema completo com upload de imagens.        |
+| **Abril**   | Implementação da área do professor e módulo de estatísticas.                      | Painel administrativo e controle de rotulagem. |
+| **Maio**    | Testes de usabilidade com turmas piloto e ajustes na interface.                   | Relatório de testes e refinamento do sistema.  |
+| **Junho**   | Preparação da documentação final e defesa do projeto.                             | Relatório final + demonstração funcional.      |
+
+## 4.4. Marcos de Acompanhamento (Checkpoints)
+| Marco                                 | Descrição                                                | Data Prevista |
+| :------------------------------------ | :------------------------------------------------------- | :------------ |
+| **M1 – RFC Validado**                 | Entrega e aprovação do documento RFC completo.           | Outubro/2025  |
+| **M2 – Mockup e Arquitetura Prontos** | Protótipo navegável e definição da arquitetura técnica.  | Novembro/2025 |
+| **M3 – MVP Básico**                   | Plataforma com rotulagem de imagens funcional.           | Dezembro/2025 |
+| **M4 – MVP Expandido**                | Sistema completo com painel do professor e estatísticas. | Abril/2026    |
+| **M5 – Testes Acadêmicos**            | Uso piloto com estudantes em disciplina de IA.           | Maio/2026     |
+| **M6 – Entrega Final / Defesa**       | Relatório técnico e demonstração funcional.              | Junho/2026    |
+
+## 4.5. Próximos Passos Imediatos
+- Finalizar e submeter o RFC à validação do orientador.
+- Desenvolver os mockups e o diagrama de arquitetura inicial (C4 e casos de uso).
+- Configurar ambiente de desenvolvimento (GitHub, Flask, PostgreSQL e React).
+- Iniciar implementação do backend e integração básica para criação e rotulagem de imagens.
+
+# 5. Referências
