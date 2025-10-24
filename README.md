@@ -18,11 +18,82 @@ Data de Entrega: 29/10/2025<br>
   
 # 2. Descrição do Projeto
 &emsp;O Label4Learn é uma plataforma web inovadora na linha de projetos com Inteligência Artificial (IA), que integra conceitos de Machine Learning e Ciência de Dados aplicados ao contexto educacional. Seu objetivo é proporcionar uma experiência prática e colaborativa no ensino de IA, permitindo que professores e alunos participem ativamente da criação de datasets personalizados.<br>
+
 &emsp;O projeto consiste em uma Plataforma de Rotulagem Colaborativa de Imagens, na qual professores podem criar projetos específicos de rotulagem de imagens, e os alunos colaboram na anotação dos dados. Isso possibilita a geração de datasets originais, contextualizados e voltados para atividades práticas de IA, superando a dependência de conjuntos de dados prontos e genéricos, como MNIST, Iris ou Titanic.<br>
+
 &emsp;Na prática, os professores podem desenvolver projetos de rotulagem em diversas áreas, como classificação de plantas, frutas, objetos ou resíduos, e os alunos participam colaborativamente, realizando a anotação de imagens que comporão datasets inéditos. Esses dados podem ser exportados para treinar e avaliar modelos de Machine Learning, tornando o aprendizado mais completo, participativo e próximo da realidade profissional em Ciência de Dados.<br>
+
 &emsp;O público-alvo do Label4Learn inclui professores e estudantes de graduação em Engenharia de Software, Ciência da Computação, Sistemas de Informação e áreas correlatas, além de instituições de ensino técnico e superior que oferecem disciplinas de Inteligência Artificial e Machine Learning. Pesquisadores e iniciantes em IA que necessitam criar seus próprios datasets acadêmicos também se beneficiam da plataforma.<br>
+
 &emsp;O projeto busca resolver problemas comuns no ensino de IA, como a dependência de datasets genéricos, a falta de vivência prática na coleta e rotulagem de dados e a dificuldade de professores em criar atividades colaborativas e reais sobre preparação de dados. Atualmente, não existem ferramentas educacionais que combinem aprendizado ativo com prática de rotulagem em sala de aula de forma acessível e didática.<br>
+
 &emsp;O diferencial do Label4Learn está em sua concepção voltada especificamente para o ambiente educacional. Ao contrário de plataformas comerciais como Labelbox ou Supervisely, a Label4Learn permite a rotulagem colaborativa, prioriza simplicidade e usabilidade didática, e incentiva o aprendizado do ciclo completo de Machine Learning, da coleta de dados ao treinamento de modelos. A plataforma também terá caráter open source, facilitando sua adoção em diferentes instituições de ensino.<br>
+
 &emsp;O MVP será inicialmente restrito à rotulagem de imagens, sem suporte a texto, áudio ou vídeo, e não incluirá integração direta com APIs externas de IA. A validação ocorrerá em ambiente acadêmico controlado, com grupos limitados de alunos, sendo seu uso voltado exclusivamente para fins educacionais e de pesquisa.<br>
+
 &emsp;Do ponto de vista legal e ético, a plataforma seguirá a LGPD, utilizando apenas imagens de domínio público ou autorizadas e sem coleta de dados pessoais sensíveis. A acessibilidade será considerada de acordo com as WCAG, garantindo interfaces intuitivas e acessíveis, e a utilização de imagens seguirá diretrizes éticas em pesquisa acadêmica.<br>
+
 &emsp;O sucesso do projeto será avaliado por meio de métricas objetivas, como o número de usuários ativos, quantidade de imagens rotuladas por projeto, tempo médio de rotulagem, taxa de concordância entre rótulos, feedback de usabilidade e satisfação dos usuários, além da aplicabilidade dos datasets gerados em projetos acadêmicos de IA.<br>
+
+# 3. Especificação Técnica
+## 3.1 Requisitos de Software
+### Requisitos Funcionais (RF)
+| Código | Descrição                                                                                                          | Prioridade |
+| :----- | :----------------------------------------------------------------------------------------------------------------- | :--------- |
+| RF01   | Permitir o cadastro e autenticação de usuários (professores e alunos).                                             | Alta       |
+| RF02   | Permitir que professores criem projetos de rotulagem de imagens.                                                   | Alta       |
+| RF03   | Permitir que alunos participem de projetos e realizem a rotulagem de imagens.                                      | Alta       |
+| RF04   | Permitir a visualização e o acompanhamento do progresso da rotulagem.                                              | Média      |
+| RF05   | Permitir o download/exportação dos datasets rotulados em formato CSV.                                              | Alta       |
+| RF06   | Exibir estatísticas básicas do projeto (quantidade de imagens rotuladas, participantes, acurácia de concordância). | Média      |
+
+### Requisitos Não-Funcionais (RNF)
+| Código | Descrição                                                                            | Categoria        |
+| :----- | :----------------------------------------------------------------------------------- | :--------------- |
+| RNF01  | A aplicação deve ser acessível via navegador web responsivo.                         | Usabilidade      |
+| RNF02  | O sistema deve suportar ao menos 50 usuários simultâneos.                            | Desempenho       |
+| RNF03  | As imagens e rótulos devem ser armazenados em banco de dados seguro e versionado.    | Segurança        |
+| RNF04  | As ações críticas (criação, edição, exclusão de projetos) devem exigir autenticação. | Segurança        |
+| RNF05  | O tempo médio de carregamento das páginas não deve exceder 2 segundos.               | Desempenho       |
+| RNF06  | O código deve seguir boas práticas de clean code e arquitetura modular (MVC).        | Manutenibilidade |
+| RNF07  | A interface deve ser intuitiva e acessível, seguindo diretrizes básicas da WCAG.     | Usabilidade      |
+
+### Representação dos Requisitos
+O diagrama de casos de uso principal envolve três atores:
+- Professor → cria e gerencia projetos.
+- Aluno → realiza a rotulagem das imagens.
+- Sistema → armazena, valida e exporta os dados rotulados.
+
+Fluxo resumido:
+- Professor cria projeto → adiciona imagens → define classes/rótulos → alunos acessam → rotulam → professor revisa → exporta dataset final.
+
+### Aderência à Linha de Projeto – Projetos com IA
+O projeto atende integralmente aos requisitos obrigatórios da linha:
+- Aplica conceitos de Machine Learning e Data Labeling, parte essencial do ciclo de IA.
+- Promove aprendizado prático de coleta e rotulagem de dados, essencial à Engenharia de Software aplicada à IA.
+
+## 3.2 Considerações de Design
+### Visão Inicial da Arquitetura
+A arquitetura segue o padrão MVC (Model-View-Controller) com as seguintes camadas:
+- Frontend (View): Interface web interativa em ReactJS.
+- Backend (Controller): API em Flask (Python) responsável pela lógica de negócios e controle de fluxo.
+- Banco de Dados (Model): PostgreSQL para armazenamento estruturado das informações de usuários, imagens e rótulos.
+- Storage: AWS S3 (ou alternativa local) para armazenamento das imagens.
+
+### Padrões de Arquitetura
+- MVC – separação clara entre apresentação, controle e dados.
+- RESTful API – comunicação entre frontend e backend.
+- Arquitetura em Camadas – modularidade e facilidade de manutenção.
+
+### Decisões e Alternativas Consideradas
+- Flask foi escolhido pela simplicidade, integração com IA e fácil hospedagem acadêmica.
+- React foi escolhido para melhor experiência visual e interação fluida.
+- Alternativas descartadas: Django (mais robusto, mas pesado para MVP) e Vue.js (menor domínio técnico da equipe).
+
+### Critérios de Escalabilidade, Resiliência e Segurança
+- Deploy em ambiente escalável (Docker + Render ou Railway).
+- Banco de dados com backup automático e controle de versão.
+- Controle de acesso baseado em função (professor/aluno).
+- Criptografia de senhas com bcrypt.
+- Validação de entrada e sanitização de dados conforme OWASP Top 10.
+
