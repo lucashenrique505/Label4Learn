@@ -217,3 +217,9 @@ Objetivo geral: Consolidar o MVP, incluir funcionalidades complementares e valid
 - Iniciar implementação do backend e integração básica para criação e rotulagem de imagens.
 
 # 5. Referências
+- Universidade Federal de Santa Catarina (UFSC). Desenvolvimento de uma aplicação web para rotulagem colaborativa de imagens voltada ao ensino de IA. Disponível em: https://repositorio.ufsc.br/handle/123456789/228154
+- Insper – Projeto IBM. Plataforma de rotulagem e curadoria de dados para modelos de Machine Learning. Disponível em: https://pfe.insper.edu.br/arquivos/ibm/projeto39/Grupo_IBM_trabalho.pdf
+- Universidade Federal de Santa Catarina (UFSC). Análise e desenvolvimento de uma ferramenta de anotação de dados para visão computacional. Disponível em: https://repositorio.ufsc.br/handle/123456789/232649
+- Rubeus. Machine Learning na Educação: o futuro do ensino personalizado. Disponível em: https://rubeus.com.br/blog/machine-learning-na-educacao/
+- Alura. Qual é a diferença entre Data Science, Machine Learning e Inteligência Artificial? Disponível em: https://www.alura.com.br/artigos/qual-e-a-diferenca-de-data-science-machine-learning-e-inteligencia-artificial
+- Amazon Web Services (AWS). O que é rotulagem de dados? Disponível em: https://aws.amazon.com/pt/what-is/data-labeling/
