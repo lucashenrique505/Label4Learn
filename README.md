@@ -89,10 +89,12 @@ Data de Entrega: 29/10/2025<br>
 | RNF07  | A interface deve ser intuitiva e acessível, seguindo diretrizes básicas da WCAG.     | Usabilidade      |
 
 ### Representação dos Requisitos
-O diagrama de casos de uso principal envolve três atores:
+O diagrama  principal envolve três atores:
 - Professor → cria e gerencia projetos.
 - Aluno → realiza a rotulagem das imagens.
 - Sistema → armazena, valida e exporta os dados rotulados.
+
+<img width="1025" height="483" alt="image" src="https://github.com/user-attachments/assets/5143c38a-9e92-4124-a609-7b987aa9802d" />
 
 Fluxo resumido:
 - Professor cria projeto → adiciona imagens → define classes/rótulos → alunos acessam → rotulam → professor revisa → exporta dataset final.
@@ -106,8 +108,8 @@ O projeto atende integralmente aos requisitos obrigatórios da linha:
 ### Visão Inicial da Arquitetura
 A arquitetura segue o padrão MVC (Model-View-Controller) com as seguintes camadas:
 - Frontend (View): Interface web interativa em ReactJS.
-- Backend (Controller): API em Flask (Python) responsável pela lógica de negócios e controle de fluxo.
-- Banco de Dados (Model): PostgreSQL para armazenamento estruturado das informações de usuários, imagens e rótulos.
+- Backend (Controller): API construída em Node.js com Express, responsável pela lógica de negócios, autenticação, controle de fluxo e comunicação com o banco de dados.
+- Banco de Dados (Model): PostgreSQL para armazenamento estruturado das informações de usuários e rótulos.
 - Storage: AWS S3 (ou alternativa local) para armazenamento das imagens.
 
 ### Padrões de Arquitetura
@@ -116,7 +118,6 @@ A arquitetura segue o padrão MVC (Model-View-Controller) com as seguintes camad
 - Arquitetura em Camadas – modularidade e facilidade de manutenção.
 
 ### Decisões e Alternativas Consideradas
-- Flask foi escolhido pela simplicidade, integração com IA e fácil hospedagem acadêmica.
 - React foi escolhido para melhor experiência visual e interação fluida.
 - Alternativas descartadas: Django (mais robusto, mas pesado para MVP) e Vue.js (menor domínio técnico da equipe).
 
@@ -130,7 +131,7 @@ A arquitetura segue o padrão MVC (Model-View-Controller) com as seguintes camad
 ## 3.3 Stack Tecnológica
 | Categoria          | Tecnologia              | Justificativa                                          |
 | :----------------- | :---------------------- | :----------------------------------------------------- |
-| Linguagem Backend  | **Python (Flask)**      | Simplicidade e ampla integração com bibliotecas de IA. |
+| Linguagem Backend  | **Node.js**             | Simplicidade e ampla integração com bibliotecas de IA. |
 | Frontend           | **ReactJS**             | Framework moderno, responsivo e eficiente.             |
 | Banco de Dados     | **PostgreSQL**          | Confiável, open source e robusto.                      |
 | Armazenamento      | **AWS S3 / Cloudinary** | Gerenciamento de imagens e escalabilidade.             |
@@ -151,7 +152,7 @@ Licenciamento:
 
 ### Medidas de Mitigação
 - Sanitização e validação de todas as entradas.
-- Autenticação segura (JWT ou Flask-Login).
+- Autenticação segura (JWT).
 - Criptografia de senhas com bcrypt.
 - Controle de permissões baseado em função (RBAC).
 - Armazenamento de imagens apenas em ambientes restritos.
@@ -187,7 +188,7 @@ Objetivo geral: Estruturar os fundamentos conceituais, técnicos e visuais da pl
 | :--------------------------- | :------------------------------------------------------------------------------------------ | :---------------------------------------------------- |
 | **Outubro**                  | Finalização do RFC e definição dos requisitos funcionais e não funcionais.                  | Documento RFC completo e validado.                    |
 | **Outubro – Novembro**       | Desenvolvimento dos mockups no Figma e estruturação do design do sistema (arquitetura MVC). | Protótipo navegável e diagrama de arquitetura.        |
-| **Novembro**                 | Implementação inicial do backend (API Flask) e configuração do banco de dados.              | API base funcional e conexão com PostgreSQL.          |
+| **Novembro**                 | Implementação inicial do backend (API Express) e configuração do banco de dados.            | API base funcional e conexão com PostgreSQL.          |
 | **Dezembro**                 | Integração com o frontend (ReactJS) e teste das rotas principais.                           | MVP funcional: criação de projeto e rotulagem básica. |
 | **Encerramento Portfólio I** | Apresentação do MVP parcial e relatório técnico intermediário.                              | Apresentação + relatório técnico parcial.             |
 
@@ -213,7 +214,7 @@ Objetivo geral: Consolidar o MVP, incluir funcionalidades complementares e valid
 ## 4.5. Próximos Passos Imediatos
 - Finalizar e submeter o RFC à validação do orientador.
 - Desenvolver os mockups e o diagrama de arquitetura inicial (C4 e casos de uso).
-- Configurar ambiente de desenvolvimento (GitHub, Flask, PostgreSQL e React).
+- Configurar ambiente de desenvolvimento (GitHub, Node, PostgreSQL e React).
 - Iniciar implementação do backend e integração básica para criação e rotulagem de imagens.
 
 # 5. Referências
