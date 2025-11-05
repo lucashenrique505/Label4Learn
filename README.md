@@ -5,35 +5,65 @@ Curso: Engenharia de Software - Centro Universitário - Católica de Santa Catar
 Data de Entrega: 29/10/2025<br>
 
 # Resumo
-&emsp;A Label4Learn é uma plataforma web colaborativa voltada ao ensino de Inteligência Artificial e Machine Learning, que permite a criação e rotulagem de imagens em sala de aula. O projeto busca superar a dependência de datasets prontos e repetitivos, oferecendo aos estudantes a oportunidade de vivenciar a etapa mais prática e demorada da Ciência de Dados — a rotulagem. Professores podem criar projetos personalizados e acompanhar a participação dos alunos, enquanto a turma colabora na construção de datasets originais que poderão ser usados em atividades e experimentos de IA. A proposta alia aprendizado ativo, colaboração e aplicação prática, promovendo uma formação mais completa e realista para futuros engenheiros de software na Ciência de Dados.
+<p align="justify">
+  &emsp;A Label4Learn é uma plataforma web colaborativa voltada ao ensino de Inteligência Artificial e Machine Learning, que permite a criação e rotulagem de imagens em sala de aula. O projeto busca superar a dependência de datasets prontos e repetitivos, oferecendo aos estudantes a oportunidade de vivenciar a etapa mais prática e demorada da Ciência de Dados — a rotulagem. Professores podem criar projetos personalizados e acompanhar a participação dos alunos, enquanto a turma colabora na construção de datasets originais que poderão ser usados em atividades e experimentos de IA. A proposta alia aprendizado ativo, colaboração e aplicação prática, promovendo uma formação mais completa e realista para futuros engenheiros de software na Ciência de Dados.
+</p>
   
 # 1. Introdução
-&emsp;No contexto do ensino de Engenharia de Software e Inteligência Artificial, este projeto propõe o desenvolvimento de uma plataforma web de rotulagem colaborativa de imagens, voltada para o meio acadêmico, com foco em cursos de Inteligência Artificial e Machine Learning.
+<p align="justify">
+  &emsp;No contexto do ensino de Engenharia de Software e Inteligência Artificial, este projeto propõe o desenvolvimento de uma plataforma web de rotulagem colaborativa de imagens, voltada para o meio acadêmico, com foco em cursos de Inteligência Artificial e Machine Learning.
+</p>
+
+<p align="justify">
+  &emsp;A proposta surge da necessidade de superar a dependência de datasets prontos e repetitivos (como Iris, Titanic e MNIST), amplamente utilizados em sala de aula, mas que não oferecem aos alunos uma experiência prática sobre a etapa mais desafiadora e demorada da Ciência de Dados: a coleta e rotulagem de dados originais.<br>
+</p>
+<p align="justify">
+  &emsp;Essa etapa é fundamental, pois a qualidade e a eficiência do processo de rotulagem impactam diretamente o desempenho dos modelos de Machine Learning — sendo impossível alcançar alta acurácia se os dados de treinamento não forem bem rotulados.
+</p>
   
-&emsp;A proposta surge da necessidade de superar a dependência de datasets prontos e repetitivos (como Iris, Titanic e MNIST), amplamente utilizados em sala de aula, mas que não oferecem aos alunos uma experiência prática sobre a etapa mais desafiadora e demorada da Ciência de Dados: a coleta e rotulagem de dados originais.<br>
-&emsp;Essa etapa é fundamental, pois a qualidade e a eficiência do processo de rotulagem impactam diretamente o desempenho dos modelos de Machine Learning — sendo impossível alcançar alta acurácia se os dados de treinamento não forem bem rotulados.
-  
-&emsp;Com a plataforma, professores poderão criar projetos de rotulagem específicos para suas disciplinas, enquanto os alunos, de forma colaborativa, participarão do processo de anotação. O resultado será a geração de datasets inéditos e contextualizados, que poderão ser utilizados em atividades práticas de treinamento e avaliação de modelos de IA.<br>
-&emsp;Nesse sentido, a proposta busca aproximar o estudante do processo real de preparação de dados, permitindo vivenciar de forma prática a importância da qualidade dos rótulos na construção de modelos de IA mais precisos e confiáveis.
+<p align="justify">
+  &emsp;Com a plataforma, professores poderão criar projetos de rotulagem específicos para suas disciplinas, enquanto os alunos, de forma colaborativa, participarão do processo de anotação. O resultado será a geração de datasets inéditos e contextualizados, que poderão ser utilizados em atividades práticas de treinamento e avaliação de modelos de IA.<br>
+</p>
+<p align="justify">
+  &emsp;Nesse sentido, a proposta busca aproximar o estudante do processo real de preparação de dados, permitindo vivenciar de forma prática a importância da qualidade dos rótulos na construção de modelos de IA mais precisos e confiáveis.
+</p>
   
 # 2. Descrição do Projeto
-&emsp;O Label4Learn é uma plataforma web inovadora na linha de projetos com Inteligência Artificial (IA), que integra conceitos de Machine Learning e Ciência de Dados aplicados ao contexto educacional. Seu objetivo é proporcionar uma experiência prática e colaborativa no ensino de IA, permitindo que professores e alunos participem ativamente da criação de datasets personalizados.<br>
+<p align="justify">
+  &emsp;O Label4Learn é uma plataforma web inovadora na linha de projetos com Inteligência Artificial (IA), que integra conceitos de Machine Learning e Ciência de Dados aplicados ao contexto educacional. Seu objetivo é proporcionar uma experiência prática e colaborativa no ensino de IA, permitindo que professores e alunos participem ativamente da criação de datasets personalizados e contextualizados.<br>
+</p>
 
-&emsp;O projeto consiste em uma Plataforma de Rotulagem Colaborativa de Imagens, na qual professores podem criar projetos específicos de rotulagem de imagens, e os alunos colaboram na anotação dos dados. Isso possibilita a geração de datasets originais, contextualizados e voltados para atividades práticas de IA, superando a dependência de conjuntos de dados prontos e genéricos, como MNIST, Iris ou Titanic.<br>
+<p align="justify">
+  &emsp;O projeto propõe o desenvolvimento de uma plataforma de rotulagem colaborativa de imagens, na qual professores criam projetos específicos de anotação e os alunos colaboram rotulando imagens de forma supervisionada. Essa dinâmica possibilita a geração de datasets originais voltados a atividades práticas de IA, superando a dependência de conjuntos de dados prontos e genéricos, como MNIST, Iris ou Titanic, que limitam a criatividade e o aprendizado aplicado.<br>
+</p>
 
-&emsp;Na prática, os professores podem desenvolver projetos de rotulagem em diversas áreas, como classificação de plantas, frutas, objetos ou resíduos, e os alunos participam colaborativamente, realizando a anotação de imagens que comporão datasets inéditos. Esses dados podem ser exportados para treinar e avaliar modelos de Machine Learning, tornando o aprendizado mais completo, participativo e próximo da realidade profissional em Ciência de Dados.<br>
+<p align="justify">
+  &emsp;Na prática, a plataforma permite que docentes desenvolvam projetos de rotulagem em áreas diversas — como classificação de plantas, frutas, objetos ou resíduos — e que os estudantes participem da anotação das imagens que comporão datasets inéditos. Esses dados poderão ser exportados para treinar e avaliar modelos de Machine Learning, tornando o aprendizado mais participativo, completo e alinhado à realidade profissional da Ciência de Dados.<br>
+</p>
 
-&emsp;O público-alvo do Label4Learn inclui professores e estudantes de graduação em Engenharia de Software, Ciência da Computação, Sistemas de Informação e áreas correlatas, além de instituições de ensino técnico e superior que oferecem disciplinas de Inteligência Artificial e Machine Learning. Pesquisadores e iniciantes em IA que necessitam criar seus próprios datasets acadêmicos também se beneficiam da plataforma.<br>
+<p align="justify">
+  &emsp;O público-alvo do Label4Learn é composto por professores e estudantes de graduação em Engenharia de Software, Ciência da Computação, Sistemas de Informação e áreas correlatas, além de instituições de ensino técnico e superior que oferecem disciplinas de IA e Machine Learning. Pesquisadores e iniciantes que necessitam criar seus próprios datasets acadêmicos também se beneficiam da ferramenta, que democratiza o acesso a práticas fundamentais da área.<br>
+</p>
 
-&emsp;O projeto busca resolver problemas comuns no ensino de IA, como a dependência de datasets genéricos, a falta de vivência prática na coleta e rotulagem de dados e a dificuldade de professores em criar atividades colaborativas e reais sobre preparação de dados. Atualmente, não existem ferramentas educacionais que combinem aprendizado ativo com prática de rotulagem em sala de aula de forma acessível e didática.<br>
+<p align="justify">
+  &emsp;O projeto busca resolver problemas concretos do ensino de IA, como a dependência de datasets genéricos, a ausência de vivência prática nas etapas de coleta e rotulagem de dados e a dificuldade dos professores em propor atividades colaborativas realistas sobre preparação de dados. Atualmente, há uma lacuna entre teoria e prática: não existem ferramentas educacionais que combinem aprendizado ativo com rotulagem acessível e didática em sala de aula.<br>
+</p>
 
-&emsp;O diferencial do Label4Learn está em sua concepção voltada especificamente para o ambiente educacional. Ao contrário de plataformas comerciais como Labelbox ou Supervisely, a Label4Learn permite a rotulagem colaborativa, prioriza simplicidade e usabilidade didática, e incentiva o aprendizado do ciclo completo de Machine Learning, da coleta de dados ao treinamento de modelos. A plataforma também terá caráter open source, facilitando sua adoção em diferentes instituições de ensino.<br>
+<p align="justify">
+  &emsp;O diferencial do Label4Learn está justamente em seu foco educacional. Ao contrário de plataformas comerciais como Labelbox ou Supervisely, que atendem empresas e pesquisadores avançados, o Label4Learn foi pensado para o ambiente acadêmico, priorizando simplicidade, colaboração e usabilidade didática. A plataforma incentiva o aprendizado do ciclo completo de Machine Learning — desde a coleta até a preparação dos dados — e será distribuída sob formato open source, permitindo adaptação e adoção em diferentes instituições de ensino.<br>
+</p>
 
-&emsp;O MVP será inicialmente restrito à rotulagem de imagens, sem suporte a texto, áudio ou vídeo, e não incluirá integração direta com APIs externas de IA. A validação ocorrerá em ambiente acadêmico controlado, com grupos limitados de alunos, sendo seu uso voltado exclusivamente para fins educacionais e de pesquisa.<br>
+<p align="justify">
+  &emsp;Em sua fase inicial, o MVP será restrito à rotulagem de imagens, sem suporte a texto, áudio ou vídeo, e não incluirá integração com APIs externas de IA. A validação ocorrerá em ambiente acadêmico controlado, com grupos limitados de alunos, e seu uso será voltado exclusivamente para fins educacionais e de pesquisa.<br>
+</p>
 
-&emsp;Do ponto de vista legal e ético, a plataforma seguirá a LGPD, utilizando apenas imagens de domínio público ou autorizadas e sem coleta de dados pessoais sensíveis. A acessibilidade será considerada de acordo com as WCAG, garantindo interfaces intuitivas e acessíveis, e a utilização de imagens seguirá diretrizes éticas em pesquisa acadêmica.<br>
+<p align="justify">
+  &emsp;No aspecto ético e legal, o projeto seguirá as diretrizes da Lei Geral de Proteção de Dados (LGPD), garantindo o uso apenas de imagens de domínio público ou devidamente autorizadas, sem coleta de dados pessoais sensíveis. Serão observadas também as normas de acessibilidade da WCAG, assegurando uma interface intuitiva e inclusiva, e os princípios de ética em pesquisa, respeitando o uso responsável dos dados.<br>
+</p>
 
-&emsp;O sucesso do projeto será avaliado por meio de métricas objetivas, como o número de usuários ativos, quantidade de imagens rotuladas por projeto, tempo médio de rotulagem, taxa de concordância entre rótulos, feedback de usabilidade e satisfação dos usuários, além da aplicabilidade dos datasets gerados em projetos acadêmicos de IA.<br>
+<p align="justify">
+  &emsp;O sucesso da plataforma será avaliado por métricas objetivas, como o número de usuários ativos, a quantidade de imagens rotuladas por projeto, o tempo médio de rotulagem, a taxa de concordância entre rótulos, o feedback de usabilidade e a satisfação dos usuários. Além disso, será analisada a aplicabilidade dos datasets gerados em projetos acadêmicos de IA, comprovando o impacto educacional e prático da proposta.
+</p>
 
 # 3. Especificação Técnica
 ## 3.1 Requisitos de Software
