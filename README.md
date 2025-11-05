@@ -176,9 +176,10 @@ Licenciamento:
 
 # 4. Próximos Passos
 ## 4.1. Visão Geral
-
+<p align="justify">
 O projeto Label4Learn será desenvolvido em duas etapas principais — Portfólio I e Portfólio II — correspondendo ao ciclo completo de concepção, implementação e validação da solução.<br>
 O foco inicial será construir um MVP funcional (mínimo produto viável) voltado à rotulagem colaborativa de imagens no contexto acadêmico, garantindo base sólida para expansão futura.
+</p>
 
 ## 4.2. Portfólio I – Planejamento e Prototipagem (Semestre Atual)
 Objetivo geral: Estruturar os fundamentos conceituais, técnicos e visuais da plataforma.
