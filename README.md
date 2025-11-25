@@ -117,6 +117,29 @@ A arquitetura segue o padrão MVC (Model-View-Controller) com as seguintes camad
 - RESTful API – comunicação entre frontend e backend.
 - Arquitetura em Camadas – modularidade e facilidade de manutenção.
 
+### Protótipos Iniciais
+#### Tela Principal (Home)
+<img width="1302" height="701" alt="image" src="https://github.com/user-attachments/assets/b4ee2120-b95b-4ed9-86b8-2a0dc55c78ce" />
+
+#### Tela de Cadastro
+<img width="1278" height="735" alt="image" src="https://github.com/user-attachments/assets/9647f745-0143-42c3-861e-75f7b8102394" />
+
+#### Tela de Login
+<img width="1277" height="627" alt="image" src="https://github.com/user-attachments/assets/c283e21b-3651-4fc3-82aa-df5e872dd6de" />
+
+#### Tela de Gerenciamento de Projetos do Professor
+<img width="1389" height="745" alt="gerencia_projetos" src="https://github.com/user-attachments/assets/a0cced99-ea6c-427a-9b88-7dc601de2160" />
+
+#### Tela de Criação de Projetos
+<img width="1366" height="661" alt="criacao_projeto1" src="https://github.com/user-attachments/assets/4fd100a2-ccd7-49d8-82ec-baf86a56c386" />
+<img width="1376" height="533" alt="criacao_projeto2" src="https://github.com/user-attachments/assets/084ed153-9b43-486f-981e-e7a65aa83652" />
+
+#### Tela de Gerenciamento de Projetos do Aluno
+<img width="1368" height="744" alt="gerencia_projetos_aluno" src="https://github.com/user-attachments/assets/e56ef3b3-944b-4daa-939e-91ba4b7c196c" />
+
+#### Tela de Rotulagem das Imagens
+<img width="1373" height="734" alt="rotula_imagem" src="https://github.com/user-attachments/assets/01270730-cd22-49a9-90fb-9537c0f1872d" />
+
 ### Decisões e Alternativas Consideradas
 - React foi escolhido para melhor experiência visual e interação fluida.
 - Alternativas descartadas: Django (mais robusto, mas pesado para MVP) e Vue.js (menor domínio técnico da equipe).
